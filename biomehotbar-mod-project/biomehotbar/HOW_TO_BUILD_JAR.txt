@@ -1,0 +1,12 @@
+HOW TO TURN THIS ZIP INTO A MOD .JAR
+====================================
+1. Install JDK 25 (https://adoptium.net) - Minecraft 26.x needs Java 25.
+2. Install Gradle 9.x (https://gradle.org/install) OR copy the folders/files
+   "gradle/", "gradlew", "gradlew.bat" from https://github.com/FabricMC/fabric-example-mod
+   into this folder and use ./gradlew (Windows: gradlew.bat) in place of "gradle" below.
+3. Open gradle.properties. For Minecraft 26.3, set minecraft_version, loader_version,
+   loom_version and fabric_api_version to the values shown at https://fabricmc.net/develop
+4. In this folder run:   gradle build
+5. Your mod is at:      build/libs/biomehotbar-1.0.0.jar   (ignore the -sources jar)
+6. Put that jar in .minecraft/mods together with Fabric Loader + Fabric API.
+   Enchantment Outlines goes in resourcepacks as usual.
